@@ -91,8 +91,7 @@ INSERT INTO books (title, description, AuthorID) VALUES
 
 Here's a GitHub README file for your SQL database project:
 
-markdown
-Copy code
+
 # SQL Database Project: Authors and Books
 
 ## Overview
@@ -103,7 +102,7 @@ This project involves creating and managing a relational database with two main 
 
 ### Authors Table
 
-```sql
+
 CREATE TABLE authors
 (
     AuthorID NUMBER(10) PRIMARY KEY,
@@ -111,9 +110,9 @@ CREATE TABLE authors
     last_name VARCHAR2(20),
     nationality VARCHAR2(25)
 );
-Books Table
-sql
-Copy code
+
+### Books Table
+
 CREATE TABLE books
 (
    BookID NUMBER(10) PRIMARY KEY,
@@ -122,19 +121,18 @@ CREATE TABLE books
    AuthorID NUMBER,
    FOREIGN KEY (AuthorID) REFERENCES authors(AuthorID)
 );
-Sample Data
-Authors
-sql
-Copy code
+### Sample Data
+## Authors
+
 INSERT INTO authors (first_name, last_name, nationality) VALUES
 ('John', 'Kani', 'South African'),
 ('Chinua', 'Achebe', 'Nigerian'),
 ('Haruki', 'Murakami', 'Japanese'),
 ('Markus', 'Zusak', 'Australian'),
 ('Salman', 'Rushdie', 'Indian');
-Books
-sql
-Copy code
+
+### Books
+
 INSERT INTO books (title, description, AuthorID) VALUES
 ('Things Fall Apart', 'This novel is a cornerstone of African literature, depicting the life of Okonkwo, a respected leader in the Igbo community, and the impact of European colonialism on traditional African society. It explores themes of cultural conflict, tradition, and change.', 2),
 ('The Wind-Up Bird Chronicle', 'This surreal and complex novel follows Toru Okada, a man searching for his missing wife, Kumiko, in a strange and unsettling version of Tokyo. Blending elements of fantasy, history, and existentialism, the book delves into the subconscious and the nature of reality.', 3),
