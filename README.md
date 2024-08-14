@@ -8,7 +8,6 @@ This project involves creating and managing a relational database with two main 
 
 ### Authors Table
 
-```sql
 CREATE TABLE authors
 (
     AuthorID NUMBER(10) PRIMARY KEY,
@@ -29,11 +28,6 @@ CREATE TABLE books
 );
 
 
-
-Here's a GitHub README file for your SQL database project:
-
-markdown
-Copy code
 # SQL Database Project: Authors and Books
 
 ## Overview
