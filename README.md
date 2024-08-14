@@ -13,7 +13,7 @@ CREATE TABLE authors
     AuthorID NUMBER(10) PRIMARY KEY,
     first_name VARCHAR2(20),
     last_name VARCHAR2(20),
-    nationality VARCHAR2(25)
+    nationality ENUM('South African', 'Australia', 'India', 'Nigeria', 'Japan')
 );
 
 ### Books Table
@@ -62,11 +62,11 @@ CREATE TABLE books
 ## Authors
 
 INSERT INTO authors (first_name, last_name, nationality) VALUES
-('John', 'Kani', 'South African'),
-('Chinua', 'Achebe', 'Nigerian'),
-('Haruki', 'Murakami', 'Japanese'),
-('Markus', 'Zusak', 'Australian'),
-('Salman', 'Rushdie', 'Indian');
+('John', 'Kani', 'South Africa'),
+('Chinua', 'Achebe', 'Nigeria'),
+('Haruki', 'Murakami', 'Japan'),
+('Markus', 'Zusak', 'Australia'),
+('Salman', 'Rushdie', 'India');
 
 ## Books
 INSERT INTO books (title, description, AuthorID) VALUES
