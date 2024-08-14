@@ -108,7 +108,7 @@ ORDER BY authorBookCount DESC
 FETCH FIRST 1 ROWS ONLY;
 
 
-##Query 3: Number of Books by Nationality
+## Query 3: Number of Books by Nationality
 SELECT a.nationality, COUNT(b.BookID) AS TheNumberOfBooks
 FROM authors a
 JOIN books b ON a.AuthorID = b.AuthorID
