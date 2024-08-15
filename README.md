@@ -24,8 +24,10 @@ description  TEXT(300),
 author_id INT,
 FOREIGN KEY (author_id) REFERENCES authors(author_id));
 
-Inserting data into the authors table 
+Inserting data into the authors table
+
 INSERT INTO authors VALUES
+
 (1, 'John', 'Kani', 'South African'),
 (2, 'Chinua', 'Achebe', 'Nigerian'),
 (3, 'Haruki', 'Murakami', 'Japanese'),
@@ -45,10 +47,10 @@ Each author has the following attributes:  First name,  Last name,  Nationality 
 
 CREATE TABLE authors
 (
-author_id INT PRIMARY KEY auto_increment,  --Increment by 1 for each new record added on the table
+author_id INT PRIMARY KEY auto_increment,  
 first_name VARCHAR(30),
 last_name VARCHAR(30),
-nationality ENUM ('South Africa', 'Australia', 'India', 'Nigeria', 'Japan') --Assign nationality values
+nationality ENUM ('South Africa', 'Australia', 'India', 'Nigeria', 'Japan') 
 );
  
   
