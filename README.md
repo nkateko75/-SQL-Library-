@@ -48,8 +48,11 @@ Each author has the following attributes:  First name,  Last name,  Nationality 
 CREATE TABLE authors
 (
 author_id INT PRIMARY KEY auto_increment,  
+
 first_name VARCHAR(30),
+
 last_name VARCHAR(30),
+
 nationality ENUM ('South Africa', 'Australia', 'India', 'Nigeria', 'Japan') 
 );
  
