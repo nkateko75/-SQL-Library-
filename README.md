@@ -61,8 +61,10 @@ nationality ENUM ('South Africa', 'Australia', 'India', 'Nigeria', 'Japan') --As
 
 #### Create atleast 5 authors.  
 
-Write a script that populates your database.  
+Write a script that populates your database.
+
 INSERT INTO authors VALUES
+
 (1, 'John', 'Kani', 'South African'),
 (2, 'Chinua', 'Achebe', 'Nigerian'),
 (3, 'Haruki', 'Murakami', 'Japanese'),
@@ -78,6 +80,7 @@ INSERT INTO authors VALUES
 Inserting data into the books table 
 
 INSERT  INTO books VALUES 
+
 (1,'Things Fall Apart', 'This novel is a cornerstone of African literature, depicting the life of Okonkwo, a respected leader in the Igbo community, and the impact of European colonialism on traditional African society. It explores themes of cultural conflict, tradition, and change.', '2'),
 
 (2,'The Wind-Up Bird Chronicle', 'This surreal and complex novel follows Toru Okada, a man searching for his missing wife, Kumiko, in a strange and unsettling version of Tokyo. Blending elements of fantasy, history, and existentialism, the book delves into the subconscious and the nature of reality.', '3'),
