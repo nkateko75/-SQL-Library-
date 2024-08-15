@@ -17,14 +17,14 @@ Creating books' database
 CREATE DATABASE myBooks;
 Creating Books table
 
-CREATE TABLE books(
-book_id INT PRIMARY KEY auto_increment,
+CREATE TABLE books
+(book_id INT PRIMARY KEY auto_increment,
 title VARCHAR(100),
 description  TEXT(300),
 author_id INT,
 FOREIGN KEY (author_id) REFERENCES authors(author_id));
 
---Inserting data into the authors table 
+Inserting data into the authors table 
 INSERT INTO authors VALUES
 (1, 'John', 'Kani', 'South African'),
 (2, 'Chinua', 'Achebe', 'Nigerian'),
