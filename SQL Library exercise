@@ -20,7 +20,6 @@ description  TEXT(300),
 author_id INT,
 FOREIGN KEY (author_id) REFERENCES authors(author_id));
 
-
 --Inserting data into the authors table 
 INSERT INTO authors VALUES
 (1, 'John', 'Kani', 'South African'),
@@ -57,10 +56,7 @@ GROUP BY A.author_id
 ORDER BY number_of_books DESC
 LIMIT 1;
 
-
 -- Books grouped by nationality
-
-
 SELECT A.nationality, COUNT(B.Book_id) AS number_of_books
 FROM authors A
 JOIN books B ON A.author_id = B.author_id
