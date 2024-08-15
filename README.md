@@ -12,9 +12,10 @@ The aim is to create a script that can be executed to create all the tables we n
 1. Books  
 Each book has the following attributes/columns: Title, Description, An author, Book Id.
 
--- Creating books' database
+Creating books' database
+
 CREATE DATABASE myBooks;
--- Creating Books table
+Creating Books table
 
 CREATE TABLE books(
 book_id INT PRIMARY KEY auto_increment,
@@ -133,7 +134,7 @@ LIMIT 1;
 ###### Output
 ![most books](https://github.com/user-attachments/assets/b37e5061-345e-45eb-8656-85274ef4acd9)
 
-## Query 3: Number of Books by Nationality
+#### Query 3: Number of Books by Nationality
 SELECT A.nationality, COUNT(B.Book_id) AS number_of_books
 FROM authors A
 JOIN books B ON A.author_id = B.author_id
