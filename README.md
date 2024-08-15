@@ -45,7 +45,8 @@ INSERT INTO authors VALUES
 2. Authors  
 Each author has the following attributes:  First name,  Last name,  Nationality (this is an enumeration), Author Id.
 
-CREATE TABLE authors
+ CREATE TABLE authors
+ 
 (
 author_id INT PRIMARY KEY auto_increment,  
 
