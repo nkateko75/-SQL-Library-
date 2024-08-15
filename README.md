@@ -10,12 +10,13 @@ This project involves creating and managing a relational database with two main 
 The aim is to create a script that can be executed to create all the tables we need.	  
 
 1. Books  
-Each book has the following attributes/columns: Title, Description, An author, Book Id.
+**Each book has the following attributes/columns: Title, Description, An author, Book Id.**
 
-Creating books' database
+**Creating books' database**
 
 CREATE DATABASE myBooks;
-Creating Books table
+
+**Creating Books table**
 
 CREATE TABLE books
 (book_id INT PRIMARY KEY auto_increment,
@@ -24,7 +25,7 @@ description  TEXT(300),
 author_id INT,
 FOREIGN KEY (author_id) REFERENCES authors(author_id));
 
-Inserting data into the authors table
+**Inserting data into the authors table**
 
 INSERT INTO authors VALUES
 
@@ -43,7 +44,7 @@ INSERT INTO authors VALUES
 
 
 2. Authors  
-Each author has the following attributes:  First name,  Last name,  Nationality (this is an enumeration), Author Id.
+**Each author has the following attributes:  First name,  Last name,  Nationality (this is an enumeration), Author Id.**
 
  CREATE TABLE authors
  
@@ -68,7 +69,7 @@ nationality ENUM ('South Africa', 'Australia', 'India', 'Nigeria', 'Japan')
 
 #### Create atleast 5 authors.  
 
-Write a script that populates your database.
+**Write a script that populates your database.**
 
 INSERT INTO authors VALUES
 
@@ -84,7 +85,7 @@ INSERT INTO authors VALUES
 
 #### Create atleast 10 books.
 
-Inserting data into the books table 
+**Inserting data into the books table**
 
 INSERT  INTO books VALUES 
 
@@ -116,7 +117,7 @@ INSERT  INTO books VALUES
 
 #### Query 1: Total Number of Books
 
-Counts how many books there are in total.  
+**Counts how many books there are in total.**
 
 SELECT COUNT(*) AS total_books FROM books;
 
@@ -128,7 +129,7 @@ SELECT COUNT(*) AS total_books FROM books;
 
 #### Query 2: Author with the Most Books
 
-Determine which author has most books.
+**Determine which author has most books.**
 
 SELECT A.first_name, A.last_name, COUNT(B.book_id) AS number_of_books
 FROM authors A
